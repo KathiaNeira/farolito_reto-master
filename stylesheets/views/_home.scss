@@ -1,0 +1,47 @@
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+	position: absolute;
+  width: 100%;
+	.navbar-brand{
+		button{
+			right: 15px;
+      position: absolute;
+      border-color: transparent;
+		}
+	}
+		ul{
+			float:none;
+			text-align:right;
+			li{
+				float: none;
+				display: inline-block;
+			}
+		}
+	}
+
+.navbar-toggle{
+	float: left;
+	margin-left: 15px;
+}
+/*@media screen (max-width: 600px){
+  .navbar-default {
+  	ul{
+    	text-align: center;
+    li{
+    	display: block;
+    }
+   }
+ }
+}*/
+
+#portada{
+	background: url(../img/img-home.png) no-repeat center center scroll;
+	height: 90%;
+	display: table;
+	background-size: cover;
+	.portada{
+		  display: table-cell;
+  		vertical-align: middle;
+	}
+}
