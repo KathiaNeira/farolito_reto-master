@@ -8,6 +8,7 @@
 			right: 15px;
       position: absolute;
       border-color: transparent;
+      border-radius: 17px;
 		}
 	}
 		ul{
@@ -16,6 +17,13 @@
 			li{
 				float: none;
 				display: inline-block;
+				.btn-ingresar{
+					  color: white !important;
+					  padding: 6px 15px !important;
+					  background: #aaa;
+					  border-radius: 17px;
+					  border: 1px solid #9f9f9f;
+				}
 			}
 		}
 	}
@@ -36,12 +44,208 @@
 }*/
 
 #portada{
-	background: url(../img/img-home.png) no-repeat center center scroll;
+	background: url(../assets/img/img-home.png) no-repeat center center scroll;
 	height: 90%;
 	display: table;
 	background-size: cover;
 	.portada{
 		  display: table-cell;
   		vertical-align: middle;
+  		.texto{
+  				  padding: 0 100px;
+  		}
+  		.oculta{
+  				width: 100%;
+  		}
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	#portada {
+		  background: none
+		}
+	}
+
+@media only screen and (max-width: 480px) {
+	#portada .portada {
+		  padding-top: 100px;
+		  vertical-align: initial;
+		}
+	}
+
+@media only screen and (max-width: 480px) {
+	#portada .portada .texto{
+		  padding: 0;
+		}
+	}
+
+#metodologia{
+	.comilla-inicio{
+		  position: relative;
+		  right: -185px;
+		  top: -10px;
+	}
+	.comilla-final{
+		  position: relative;
+		  left: -185px;
+		  bottom: -10px;
+	}
+	.circulo{
+		  width: 72%;
+		  margin: 0 auto;
+		.circulo-interno{
+				  background-color: tomato;
+				  padding: 10px;
+				  border-radius: 50%;
+				  height: 400px;
+  				width: 400px;
+			.circulo-texto{
+					  color: white;
+					  padding: 50px;
+					  background-color: tomato;
+					  border-radius: 50%;
+					  border: 2px dashed white;
+					  height: 350px;
+					  width: 350px;
+					  position: relative;
+					  margin: 0 auto;
+					  bottom: -16px;
+			}
+		}
+	}
+}
+
+#empresa{
+	  padding: 50px 0;
+	.btn-contactanos{
+			padding: 15px 35px;
+  		border-radius: 20px;
+	}
+	hr{
+		border-top: 2px dashed tomato;
+	}
+	.pasos{
+		  padding: 50px;
+		  .pasos-internos{
+		  		padding-bottom: 30px;
+		  }
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#empresa .pasos h3{
+		  color: tomato;
+		}
+	}
+
+@media only screen and (max-width: 480px) {
+	#empresa .pasos{
+		  padding: 0;
+		}
+	}
+
+#educativos{
+	padding: 50px 0;
+	background-color: rgb(108, 232, 88);
+	hr{
+		border-top: 2px dashed white;
+	}
+	.filtros{
+			padding: 50px 0;
+		img{
+			border-radius: 50%;
+		}
+	}
+	.btn-contactanos{
+		  padding: 15px 35px;
+		  border-radius: 20px;
+		  border: 2px solid white;
+		  background-color: transparent;
+	}
+}
+
+#lista{
+	background: url(../assets/img/img-oportunidades-24.png) no-repeat;
+	padding: 50px 250px;
+	.lista{
+			background-color: white;
+				hr{
+				border-bottom: 2px dashed lightgray;
+				border-top: none;
+				width: 90%;
+				margin: 0 auto;
+		}
+	}
+	.oportunidades{
+		padding: 20px 70px;
+			.btn-mas{
+					  background-color: transparent;
+					  border: 2px solid tomato;
+					  color: tomato;
+					  border-radius: 17px;
+					  padding: 7px 14px;
+					  float: right;
+		}
+		h4{
+				text-decoration: underline;
+		}
+	}
+	.btn-todos{
+				border-radius: 17px;
+				background-color: gray;
+				margin: 30px 0;
+		}
+}
+
+#blog{
+		img{
+					position: relative;
+					top: 30px;
+					border-radius: 50%;
+					}
+					.btn-ver-todos{
+						  background-color: rgb(32, 192, 213);
+						  padding: 10px 35px;
+						  border-radius: 17px;
+						  margin-top: 40px;
+					}
+		.blog{
+				background-color: lightgray;
+				padding: 30px;
+			}
+}
+
+@media only screen and (max-width: 480px) {
+	#blog .blog {
+		  background-color: transparent;
+		  padding: 50px 0 0;
+		}
+	}
+
+#consulta{
+	background-color: rgb(231, 230, 230);
+}
+
+footer{
+	background-color: gray;
+	.redes{
+			  position: relative;
+			  bottom: 20px;
+			  left: 27px;
+			  width: 30%;
+			.redes-sociales{
+					display: inline-block;
+					margin-left: 5px;
+					img{
+							border-radius: 50%;
+							border: 1px solid white;
+					}
+			}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	footer .redes {
+		  width: 60%;
+		}
+	}
