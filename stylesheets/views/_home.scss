@@ -80,6 +80,7 @@
 	}
 
 #metodologia{
+		padding: 50px 0;
 	.comilla-inicio{
 		  position: relative;
 		  right: -185px;
@@ -90,6 +91,48 @@
 		  left: -185px;
 		  bottom: -10px;
 	}
+	.seccion-circular{
+			padding: 60px 0 0;
+	}
+	.vertical,
+	.derecha,
+	.izquierda{
+  				border: 1px dashed tomato;
+  				width: 25%;
+		  }
+		  .evaluacion-derecha{
+		  		position: relative;
+				  top: 127px;
+				  left: 90px;
+		  }
+		  .evaluacion-izquierda{
+		  		position: relative;
+				  top: 127px;
+				  right: 90px;
+		  }
+		  .evaluacion-central{
+		  		padding: 20px 50px 0 !important;
+		  }
+		  .vertical{
+		  		transform: rotate(90deg);
+		  }
+		  .derecha{
+		  		transform: rotate(150deg);
+		  		position: relative;
+				  left: 208px;
+				  top: 200px;
+				  width: 70%;
+		  }
+		  .izquierda{
+		  		transform: rotate(25deg);
+		  		position: relative;
+				  right: 208px;
+				  top: 200px;
+				  width: 70%;
+		  }
+		  .evaluacion{
+		  		padding: 85px 20px 0;
+		  }
 	.circulo{
 		  width: 72%;
 		  margin: 0 auto;
@@ -101,7 +144,7 @@
   				width: 400px;
 			.circulo-texto{
 					  color: white;
-					  padding: 50px;
+					  padding: 100px 50px;
 					  background-color: tomato;
 					  border-radius: 50%;
 					  border: 2px dashed white;
@@ -113,6 +156,33 @@
 			}
 		}
 	}
+}
+
+
+@media only screen and (max-width: 680px) {
+	#metodologia .seccion-circular {
+		.vertical,
+		.derecha,
+		.izquierda{
+			position: initial;
+			width: 85%;
+			transform: rotate(0);
+		}
+		.evaluacion{
+			padding: 0;
+		}
+			.evaluacion-derecha,
+			.evaluacion-izquierda,
+			.evaluacion-centro{
+				position: initial;
+				padding: 0;
+			}
+		}
+	}
+
+#postulantes{
+		background: url(../assets/img/img-02.png) no-repeat;
+		background-size: cover; 
 }
 
 #empresa{
@@ -167,6 +237,9 @@
 #lista{
 	background: url(../assets/img/img-oportunidades-24.png) no-repeat;
 	padding: 50px 250px;
+	.titulo-lista{
+		  padding-top: 35px;
+	}
 	.lista{
 			background-color: white;
 				hr{
@@ -202,12 +275,6 @@
 					position: relative;
 					top: 30px;
 					border-radius: 50%;
-					}
-					.btn-ver-todos{
-						  background-color: rgb(32, 192, 213);
-						  padding: 10px 35px;
-						  border-radius: 17px;
-						  margin-top: 40px;
 					}
 		.blog{
 				background-color: lightgray;
@@ -249,3 +316,19 @@ footer{
 		  width: 60%;
 		}
 	}
+
+
+
+@media screen only and (max-width: 800px){
+	.navbar{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		position: fixed;
+	}
+	.navbar ul li{
+		display: block;
+		float: none;
+		border-bottom: 1px dashed red;
+	}
+}
