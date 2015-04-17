@@ -1,0 +1,42 @@
+#blog-interno{
+	  padding: 100px 0;
+	  .img-blog{
+	  	width:100%;
+	  }
+	  .blog-usuario{
+	  	h5{
+	  	 	  line-height: 25px;
+	  	 }
+	  }
+	  .profile{
+			display: inline-block;
+		}
+	  .titulo-blog{
+	  	 display: inline-block;
+	  }
+	.blog-interno{
+			 padding: 0 35px;
+			 h4{
+			 	font-weight: 900;
+			 }
+			h5{
+				margin:0;
+			}
+			hr{
+				margin: 0;
+			}
+		}
+		.blog-post,
+		.list-blog {
+				margin: 25px 0;
+		}
+		.blog-post{
+			img{
+				 margin: 0 auto;
+			  	position: relative;
+			  	top: 20px;
+			    border-radius: 50%;
+			}
+		}
+	}
+

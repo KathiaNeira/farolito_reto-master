@@ -5983,7 +5983,7 @@ button.close {
   color: #fff; }
 
 .text-lightgray {
-  color: lightgray; }
+  color: #c2c0c0; }
 
 h2 {
   font-weight: bold;
@@ -6547,7 +6547,7 @@ p {
   color: #fff; }
 
 .text-lightgray {
-  color: lightgray; }
+  color: #c2c0c0; }
 
 .navbar-default {
   background-color: transparent;
@@ -6575,6 +6575,15 @@ p {
 .navbar-toggle {
   float: left;
   margin-left: 15px; }
+
+.navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.opciones {
+  border-radius: 10px;
+  padding: 2px 4px;
+  border: 2px solid gray; }
 
 footer {
   background-color: gray; }
@@ -6866,6 +6875,9 @@ footer {
     display: block;
     float: none;
     border-bottom: 1px dashed red; } }
+.nav-nosotros {
+  background-color: #f0fbfd; }
+
 #nosotros {
   background: url(../assets/img/img_nosotros-02.png) no-repeat;
   background-size: cover;
@@ -6910,5 +6922,35 @@ footer {
 
 #test {
   padding: 50px 0; }
+
+#blog-interno {
+  padding: 100px 0; }
+  #blog-interno .img-blog {
+    width: 100%; }
+  #blog-interno .blog-usuario h5 {
+    line-height: 25px; }
+  #blog-interno .profile {
+    display: inline-block; }
+  #blog-interno .titulo-blog {
+    display: inline-block; }
+  #blog-interno .blog-interno {
+    padding: 0 35px; }
+    #blog-interno .blog-interno h4 {
+      font-weight: 900; }
+    #blog-interno .blog-interno h5 {
+      margin: 0; }
+    #blog-interno .blog-interno hr {
+      margin: 0; }
+  #blog-interno .blog-post,
+  #blog-interno .list-blog {
+    margin: 25px 0; }
+  #blog-interno .blog-post img {
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    border-radius: 50%; }
+
+.blog:hover .text-primary {
+  color: tomato; }
 
 /*# sourceMappingURL=main.css.map */
