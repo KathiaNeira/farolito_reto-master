@@ -1,8 +1,10 @@
 .navbar-default{
 	background-color: transparent;
 	border-color: transparent;
-	position: absolute;
+	position: fixed;
+	z-index:10;
   width: 100%;
+  transition: height 0.2s ease-in-out;
 	.navbar-brand{
 		button{
 			right: 15px;
@@ -43,3 +45,7 @@
 	padding: 2px 4px;
 	border: 2px solid gray;
 }
+
+/*.navbar.on-scroll{
+	 background-color: rgb(240,251,253);
+}*/

@@ -1,18 +1,9 @@
-$(document).ready(main);
-var contador = 1;
-
-function main() {
-	$('.navbar').click(function() {
-		if (contador == 1) {
-			$('nav').animate({
-				left: '0'
-			});
-			contador = 0;
-		} else {
-			contador= 1;
-			$('nav').animate({
-				left: '-100%;'
-			});
-	})
-	// body...
-}
+// $(window).scroll(function() {
+//   	// var scroll = $(this).scrollTop();
+//   	// $('#zarai').text("El scrollTop actual es: " + scroll);
+//     if ($(window).scrollTop() > ($(window).height() - 90)) {
+//       $(".navbar").addClass('on-scroll');
+//     } else {
+//       $(".navbar").removeClass('on-scroll');
+//     }
+//   });
