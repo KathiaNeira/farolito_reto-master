@@ -1,0 +1,17 @@
+footer{
+	background-color: gray;
+	.redes{
+			  position: relative;
+			  bottom: 20px;
+			  left: 27px;
+			  width: 30%;
+			.redes-sociales{
+					display: inline-block;
+					margin-left: 5px;
+					img{
+							border-radius: 50%;
+							border: 1px solid white;
+					}
+			}
+	}
+}

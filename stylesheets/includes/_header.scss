@@ -1,0 +1,34 @@
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+	position: absolute;
+  width: 100%;
+	.navbar-brand{
+		button{
+			right: 15px;
+      position: absolute;
+      border-color: transparent;
+      border-radius: 17px;
+		}
+	}
+		ul{
+			float:none;
+			text-align:right;
+			li{
+				float: none;
+				display: inline-block;
+				.btn-ingresar{
+					  color: white !important;
+					  padding: 6px 15px !important;
+					  background: #aaa;
+					  border-radius: 17px;
+					  border: 1px solid #9f9f9f;
+				}
+			}
+		}
+	}
+
+.navbar-toggle{
+	float: left;
+	margin-left: 15px;
+}

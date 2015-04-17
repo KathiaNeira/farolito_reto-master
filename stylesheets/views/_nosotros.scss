@@ -1,0 +1,58 @@
+#nosotros{
+	background: url(../assets/img/img_nosotros-02.png) no-repeat;
+	background-size: cover;
+	height: 65%;
+		.portada-nosotros{
+				display: table;
+				width: 100%;
+				position: relative;
+			.nosotros{
+					display: table-cell;
+					vertical-align: middle;
+			} 
+		}
+}
+
+#fundadores{
+	padding: 50px 0;
+	.row{
+		  padding: 50px 70px 0;
+	}
+	hr{
+		  margin-top: 70px;
+		  width: 80%;
+		  border: 1px dashed gray;
+	}
+}
+
+#asesores{
+	hr{
+		  margin-top: 70px;
+		  width: 80%;
+		  border: 1px dashed gray;
+	}
+}
+
+.redondo{
+		width: 50%;
+	  padding: 5px;
+	  border: 2px solid gray;
+	  border-radius: 50%;
+	  margin: 0 auto;	
+	  img{
+	  	width: 100%;
+	  	border-radius: 50%;
+	  }	
+	}
+
+	#genios{
+		padding: 70px 0;
+		hr{
+			border: 1px dashed white;
+  		width: 60%;
+		}
+	}
+
+	#test{
+		padding: 50px 0;
+}

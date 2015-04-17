@@ -1,37 +1,4 @@
-.navbar-default{
-	background-color: transparent;
-	border-color: transparent;
-	position: absolute;
-  width: 100%;
-	.navbar-brand{
-		button{
-			right: 15px;
-      position: absolute;
-      border-color: transparent;
-      border-radius: 17px;
-		}
-	}
-		ul{
-			float:none;
-			text-align:right;
-			li{
-				float: none;
-				display: inline-block;
-				.btn-ingresar{
-					  color: white !important;
-					  padding: 6px 15px !important;
-					  background: #aaa;
-					  border-radius: 17px;
-					  border: 1px solid #9f9f9f;
-				}
-			}
-		}
-	}
 
-.navbar-toggle{
-	float: left;
-	margin-left: 15px;
-}
 /*@media screen (max-width: 600px){
   .navbar-default {
   	ul{
@@ -52,7 +19,7 @@
 		  display: table-cell;
   		vertical-align: middle;
   		.texto{
-  				  padding: 0 100px;
+  				  padding: 0 75px;
   		}
   		.oculta{
   				width: 100%;
@@ -60,7 +27,7 @@
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
 	#portada {
 		  background: none
 		}
@@ -83,13 +50,13 @@
 		padding: 50px 0;
 	.comilla-inicio{
 		  position: relative;
-		  right: -185px;
+		  right: -257px;
 		  top: -10px;
 	}
 	.comilla-final{
 		  position: relative;
 		  left: -185px;
-		  bottom: -10px;
+		  bottom: -47px;
 	}
 	.seccion-circular{
 			padding: 60px 0 0;
@@ -97,7 +64,7 @@
 	.vertical,
 	.derecha,
 	.izquierda{
-  				border: 1px dashed tomato;
+  				border: 2px dashed tomato;
   				width: 25%;
 		  }
 		  .evaluacion-derecha{
@@ -117,17 +84,17 @@
 		  		transform: rotate(90deg);
 		  }
 		  .derecha{
-		  		transform: rotate(150deg);
+		  		transform: rotate(160deg);
 		  		position: relative;
 				  left: 208px;
-				  top: 200px;
+				  top: 160px;
 				  width: 70%;
 		  }
 		  .izquierda{
-		  		transform: rotate(25deg);
+		  		transform: rotate(20deg);
 		  		position: relative;
 				  right: 208px;
-				  top: 200px;
+				  top: 157px;
 				  width: 70%;
 		  }
 		  .evaluacion{
@@ -144,7 +111,7 @@
   				width: 400px;
 			.circulo-texto{
 					  color: white;
-					  padding: 100px 50px;
+					  padding: 40px;
 					  background-color: tomato;
 					  border-radius: 50%;
 					  border: 2px dashed white;
@@ -153,6 +120,7 @@
 					  position: relative;
 					  margin: 0 auto;
 					  bottom: -16px;
+					  font-size: 21px;
 			}
 		}
 	}
@@ -161,6 +129,9 @@
 
 @media only screen and (max-width: 680px) {
 	#metodologia .seccion-circular {
+		.circulo{
+			width: 100%;
+		}
 		.vertical,
 		.derecha,
 		.izquierda{
@@ -182,13 +153,82 @@
 
 #postulantes{
 		background: url(../assets/img/img-02.png) no-repeat;
-		background-size: cover; 
+		background-size: cover;
+		padding: 50px 0;
+		h5{
+			font-size: 24px;
+		}
+		h6{
+			  font-size: 21px !important;
+			  text-align: left;
+		}
+		.titulo-postulante{
+			  padding-top: 50px;
+		}
+			.division{
+					border-left: 2px dashed white;
+			}
+			img{
+					border-radius: 50%;
+				}
+				.img-numero{
+						float: left;
+						width: 17%;
+					}
+				.img-logo-central{
+					float: right;
+				  position: relative;
+				  bottom: 10px;
+				  width: 25%;
+				  left: 58px;
+				  z-index: 10;
+				}
+				.subrayado{
+						border: 1px dashed white;
+				}
+		.postulante-texto{
+				padding-left: 50px;
+  			padding-top: 14px;
+  			padding-bottom: 100px;
+		}
+		.btn-postulantes{
+				background-color: rgb(22, 195, 234);
+			  border: 1px solid white;
+			  border-radius: 17px;
+			  padding: 10px 35px;
+		}
 }
+
+@media only screen and (max-width: 480px) {
+		#postulantes{
+			.img-numero{
+				float: none;
+				width: 100%;
+				padding-bottom: 10px;
+			}
+			.img-logo-central{
+					float: none;
+					position: initial;
+			}
+			h4{
+				text-align: center;
+			}
+			.subrayado{
+				width: 75%;
+			}
+			.postulante-texto{
+					padding-left: 0;
+					padding-top: 0;
+					padding-bottom: 30px;
+			}
+		}
+	}
+
 
 #empresa{
 	  padding: 50px 0;
 	.btn-contactanos{
-			padding: 15px 35px;
+			padding: 5px 50px;
   		border-radius: 20px;
 	}
 	hr{
@@ -226,8 +266,11 @@
 			border-radius: 50%;
 		}
 	}
+	.filtros-internos{
+		padding: 0 25px;
+	}
 	.btn-contactanos{
-		  padding: 15px 35px;
+		  padding: 15px 50px;
 		  border-radius: 20px;
 		  border: 2px solid white;
 		  background-color: transparent;
@@ -259,7 +302,7 @@
 					  padding: 7px 14px;
 					  float: right;
 		}
-		h4{
+		p{
 				text-decoration: underline;
 		}
 	}
@@ -270,45 +313,51 @@
 		}
 }
 
+@media only screen and (max-width: 800px) {
+	#lista{
+		  padding: 50px;
+		}
+	}
+
 #blog{
+		padding: 50px 0;
+		h5{
+			text-align: left;
+		}
 		img{
 					position: relative;
 					top: 30px;
 					border-radius: 50%;
 					}
-		.blog{
-				background-color: lightgray;
-				padding: 30px;
-			}
+			.blog-post{
+						padding: 20px 150px;
+				}
 }
 
+.blog{
+		background-color: whitesmoke;
+		padding: 30px;
+			}
+
+.blog:hover {
+		background-color: gold;
+		color: white;
+}
 @media only screen and (max-width: 480px) {
-	#blog .blog {
-		  background-color: transparent;
-		  padding: 50px 0 0;
+	#blog{
+		.blog-post{
+				padding: 0;
+				.blog {
+				  background-color: transparent;
+				  padding: 50px 0 0;
+				}
+			}
 		}
 	}
 
 #consulta{
 	background-color: rgb(231, 230, 230);
-}
-
-footer{
-	background-color: gray;
-	.redes{
-			  position: relative;
-			  bottom: 20px;
-			  left: 27px;
-			  width: 30%;
-			.redes-sociales{
-					display: inline-block;
-					margin-left: 5px;
-					img{
-							border-radius: 50%;
-							border: 1px solid white;
-					}
-			}
-	}
+	padding: 50px 0;
 }
 
 @media only screen and (max-width: 480px) {

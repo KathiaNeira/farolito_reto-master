@@ -5985,6 +5985,24 @@ button.close {
 .text-lightgray {
   color: lightgray; }
 
+h2 {
+  font-weight: bold;
+  font-size: 30px; }
+
+h3 {
+  font-weight: bold;
+  font-size: 25px; }
+
+h4 {
+  font-size: 28px; }
+
+h5 {
+  line-height: 20px;
+  font-size: 17px; }
+
+p {
+  font-size: 25px; }
+
 #deslizador {
   height: 10%; }
   #deslizador img {
@@ -5998,6 +6016,43 @@ button.close {
   border-radius: 17px;
   margin-top: 40px; }
 
+.deslizador {
+  position: relative;
+  bottom: -90px; }
+  .deslizador img {
+    border-radius: 50%; }
+
+p {
+  line-height: 24px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  font-family: 'Lato', sans-serif; }
+
+h2 {
+  font-weight: bold;
+  font-size: 30px; }
+
+h3 {
+  font-weight: bold;
+  font-size: 25px; }
+
+h4 {
+  font-size: 28px; }
+
+h5 {
+  line-height: 20px;
+  font-size: 17px; }
+
+p {
+  font-size: 25px; }
+
 #deslizador {
   height: 10%; }
   #deslizador img {
@@ -6010,6 +6065,25 @@ button.close {
   padding: 10px 35px;
   border-radius: 17px;
   margin-top: 40px; }
+
+.deslizador {
+  position: relative;
+  bottom: -90px; }
+  .deslizador img {
+    border-radius: 50%; }
+
+p {
+  line-height: 24px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  font-family: 'Lato', sans-serif; }
 
 .p-0 {
   padding: rem(0) !important;
@@ -6502,6 +6576,20 @@ button.close {
   float: left;
   margin-left: 15px; }
 
+footer {
+  background-color: gray; }
+  footer .redes {
+    position: relative;
+    bottom: 20px;
+    left: 27px;
+    width: 30%; }
+    footer .redes .redes-sociales {
+      display: inline-block;
+      margin-left: 5px; }
+      footer .redes .redes-sociales img {
+        border-radius: 50%;
+        border: 1px solid white; }
+
 /*@media screen (max-width: 600px){
   .navbar-default {
   	ul{
@@ -6521,11 +6609,11 @@ button.close {
     display: table-cell;
     vertical-align: middle; }
     #portada .portada .texto {
-      padding: 0 100px; }
+      padding: 0 75px; }
     #portada .portada .oculta {
       width: 100%; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
   #portada {
     background: none; } }
 @media only screen and (max-width: 480px) {
@@ -6539,18 +6627,18 @@ button.close {
   padding: 50px 0; }
   #metodologia .comilla-inicio {
     position: relative;
-    right: -185px;
+    right: -257px;
     top: -10px; }
   #metodologia .comilla-final {
     position: relative;
     left: -185px;
-    bottom: -10px; }
+    bottom: -47px; }
   #metodologia .seccion-circular {
     padding: 60px 0 0; }
   #metodologia .vertical,
   #metodologia .derecha,
   #metodologia .izquierda {
-    border: 1px dashed tomato;
+    border: 2px dashed tomato;
     width: 25%; }
   #metodologia .evaluacion-derecha {
     position: relative;
@@ -6565,16 +6653,16 @@ button.close {
   #metodologia .vertical {
     transform: rotate(90deg); }
   #metodologia .derecha {
-    transform: rotate(150deg);
+    transform: rotate(160deg);
     position: relative;
     left: 208px;
-    top: 200px;
+    top: 160px;
     width: 70%; }
   #metodologia .izquierda {
-    transform: rotate(25deg);
+    transform: rotate(20deg);
     position: relative;
     right: 208px;
-    top: 200px;
+    top: 157px;
     width: 70%; }
   #metodologia .evaluacion {
     padding: 85px 20px 0; }
@@ -6589,7 +6677,7 @@ button.close {
       width: 400px; }
       #metodologia .circulo .circulo-interno .circulo-texto {
         color: white;
-        padding: 100px 50px;
+        padding: 40px;
         background-color: tomato;
         border-radius: 50%;
         border: 2px dashed white;
@@ -6597,9 +6685,12 @@ button.close {
         width: 350px;
         position: relative;
         margin: 0 auto;
-        bottom: -16px; }
+        bottom: -16px;
+        font-size: 21px; }
 
 @media only screen and (max-width: 680px) {
+  #metodologia .seccion-circular .circulo {
+    width: 100%; }
   #metodologia .seccion-circular .vertical,
   #metodologia .seccion-circular .derecha,
   #metodologia .seccion-circular .izquierda {
@@ -6615,12 +6706,61 @@ button.close {
     padding: 0; } }
 #postulantes {
   background: url(../assets/img/img-02.png) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding: 50px 0; }
+  #postulantes h5 {
+    font-size: 24px; }
+  #postulantes h6 {
+    font-size: 21px !important;
+    text-align: left; }
+  #postulantes .titulo-postulante {
+    padding-top: 50px; }
+  #postulantes .division {
+    border-left: 2px dashed white; }
+  #postulantes img {
+    border-radius: 50%; }
+  #postulantes .img-numero {
+    float: left;
+    width: 17%; }
+  #postulantes .img-logo-central {
+    float: right;
+    position: relative;
+    bottom: 10px;
+    width: 25%;
+    left: 58px;
+    z-index: 10; }
+  #postulantes .subrayado {
+    border: 1px dashed white; }
+  #postulantes .postulante-texto {
+    padding-left: 50px;
+    padding-top: 14px;
+    padding-bottom: 100px; }
+  #postulantes .btn-postulantes {
+    background-color: #16c3ea;
+    border: 1px solid white;
+    border-radius: 17px;
+    padding: 10px 35px; }
 
+@media only screen and (max-width: 480px) {
+  #postulantes .img-numero {
+    float: none;
+    width: 100%;
+    padding-bottom: 10px; }
+  #postulantes .img-logo-central {
+    float: none;
+    position: initial; }
+  #postulantes h4 {
+    text-align: center; }
+  #postulantes .subrayado {
+    width: 75%; }
+  #postulantes .postulante-texto {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 30px; } }
 #empresa {
   padding: 50px 0; }
   #empresa .btn-contactanos {
-    padding: 15px 35px;
+    padding: 5px 50px;
     border-radius: 20px; }
   #empresa hr {
     border-top: 2px dashed tomato; }
@@ -6644,8 +6784,10 @@ button.close {
     padding: 50px 0; }
     #educativos .filtros img {
       border-radius: 50%; }
+  #educativos .filtros-internos {
+    padding: 0 25px; }
   #educativos .btn-contactanos {
-    padding: 15px 35px;
+    padding: 15px 50px;
     border-radius: 20px;
     border: 2px solid white;
     background-color: transparent; }
@@ -6671,41 +6813,44 @@ button.close {
       border-radius: 17px;
       padding: 7px 14px;
       float: right; }
-    #lista .oportunidades h4 {
+    #lista .oportunidades p {
       text-decoration: underline; }
   #lista .btn-todos {
     border-radius: 17px;
     background-color: gray;
     margin: 30px 0; }
 
-#blog img {
-  position: relative;
-  top: 30px;
-  border-radius: 50%; }
-#blog .blog {
-  background-color: lightgray;
+@media only screen and (max-width: 800px) {
+  #lista {
+    padding: 50px; } }
+#blog {
+  padding: 50px 0; }
+  #blog h5 {
+    text-align: left; }
+  #blog img {
+    position: relative;
+    top: 30px;
+    border-radius: 50%; }
+  #blog .blog-post {
+    padding: 20px 150px; }
+
+.blog {
+  background-color: whitesmoke;
   padding: 30px; }
 
-@media only screen and (max-width: 480px) {
-  #blog .blog {
-    background-color: transparent;
-    padding: 50px 0 0; } }
-#consulta {
-  background-color: #e7e6e6; }
+.blog:hover {
+  background-color: gold;
+  color: white; }
 
-footer {
-  background-color: gray; }
-  footer .redes {
-    position: relative;
-    bottom: 20px;
-    left: 27px;
-    width: 30%; }
-    footer .redes .redes-sociales {
-      display: inline-block;
-      margin-left: 5px; }
-      footer .redes .redes-sociales img {
-        border-radius: 50%;
-        border: 1px solid white; }
+@media only screen and (max-width: 480px) {
+  #blog .blog-post {
+    padding: 0; }
+    #blog .blog-post .blog {
+      background-color: transparent;
+      padding: 50px 0 0; } }
+#consulta {
+  background-color: #e7e6e6;
+  padding: 50px 0; }
 
 @media only screen and (max-width: 480px) {
   footer .redes {
@@ -6721,5 +6866,49 @@ footer {
     display: block;
     float: none;
     border-bottom: 1px dashed red; } }
+#nosotros {
+  background: url(../assets/img/img_nosotros-02.png) no-repeat;
+  background-size: cover;
+  height: 65%; }
+  #nosotros .portada-nosotros {
+    display: table;
+    width: 100%;
+    position: relative; }
+    #nosotros .portada-nosotros .nosotros {
+      display: table-cell;
+      vertical-align: middle; }
+
+#fundadores {
+  padding: 50px 0; }
+  #fundadores .row {
+    padding: 50px 70px 0; }
+  #fundadores hr {
+    margin-top: 70px;
+    width: 80%;
+    border: 1px dashed gray; }
+
+#asesores hr {
+  margin-top: 70px;
+  width: 80%;
+  border: 1px dashed gray; }
+
+.redondo {
+  width: 50%;
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  margin: 0 auto; }
+  .redondo img {
+    width: 100%;
+    border-radius: 50%; }
+
+#genios {
+  padding: 70px 0; }
+  #genios hr {
+    border: 1px dashed white;
+    width: 60%; }
+
+#test {
+  padding: 50px 0; }
 
 /*# sourceMappingURL=main.css.map */
