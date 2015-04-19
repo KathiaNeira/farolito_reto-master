@@ -12,7 +12,7 @@
 
 #portada{
 	background: url(../assets/img/img-home.png) no-repeat center center scroll;
-	height: 90%;
+	height: 98%;
 	display: table;
 	background-size: cover;
 	.portada{
@@ -98,7 +98,7 @@
 				  width: 70%;
 		  }
 		  .evaluacion{
-		  		padding: 85px 20px 0;
+		  		padding: 85px 14px 0;
 		  }
 	.circulo{
 		  width: 72%;
@@ -111,7 +111,7 @@
   				width: 400px;
 			.circulo-texto{
 					  color: white;
-					  padding: 40px;
+					  padding: 55px 14px;
 					  background-color: tomato;
 					  border-radius: 50%;
 					  border: 2px dashed white;
@@ -121,8 +121,19 @@
 					  margin: 0 auto;
 					  bottom: -16px;
 					  font-size: 21px;
+					  p{
+					  	line-height: 30px !important;
+					  }
 			}
 		}
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 94px;
+	}
+	.btn-ver-todos{
+		 padding: 14px 70px;
 	}
 }
 
@@ -320,23 +331,23 @@
 	}
 
 #blog{
-		padding: 50px 0;
+		padding: 35px 0;
 		h5{
 			text-align: left;
 		}
 		img{
 					position: relative;
-					top: 30px;
+					bottom: 30px;
 					border-radius: 50%;
 					}
 			.blog-post{
-						padding: 20px 150px;
+						padding: 60px 150px;
 				}
 }
 
 .blog{
 		background-color: whitesmoke;
-		padding: 30px;
+		padding: 0 25px 38px;
 			}
 
 .blog:hover {
@@ -349,7 +360,12 @@
 				padding: 0;
 				.blog {
 				  background-color: transparent;
-				  padding: 50px 0 0;
+				  margin-bottom: 38px;
+  				padding: 25px;
+  				img{
+  						position: initial;
+  						bottom: 0;
+  				}
 				}
 			}
 		}

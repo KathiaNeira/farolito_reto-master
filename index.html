@@ -7,10 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-		// <script src="javascripts/nav.js"></script>
+		<script src="javascripts/nav.js"></script>
 	</head>
 	<body>
-		<nav class="navbar on-scroll navbar-default">
+		<nav class="navbar navbar-default navegacion-oculta active">
 		  	<div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -25,7 +25,40 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		      	<li class="hidden-lg hideen-md hidden-sm"><a href="#"><h5>Home</h5></a></li>
-		        <li><a href="#"><h5>Sobre nosotros</h5><span class="sr-only">(current)</span></a></li>
+		        <li><a href="nosotros.html"><h5>Sobre nosotros</h5><span class="sr-only">(current)</span></a></li>
+		        <li class="hidden-lg hideen-md hidden-sm"><a href="#"><h5>Ingresa a tu cuenta</h5></a></li>
+		        <li class="hidden-lg hideen-md hidden-sm"><a href="#"><h5>Home</h5></a></li>
+		        <li><a href="#"><h5>Crear cuenta</h5></a></li>
+		        <li class="hidden-lg hideen-md hidden-sm"><a href="#"><h5>Blog</h5></a></li>
+		        <!-- <form class="navbar-form navbar-left" role="search"> -->
+		        <li>
+		        	<select class="opciones">
+		        		<option>Es</option>
+		        		<option>In</option>
+		        	</select>
+		        </li>
+	        	<li><a href=""><button type="submit" class="btn btn-default text-muted hidden-xs btn-xs btn-ingresar">INGRESAR</button></a></li>
+	      	  <!-- </form> -->
+	      	  </ul>
+	      	</div>
+	      </div>
+	    </nav>
+	    <nav class="navbar navbar-default">
+		  	<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><button class="btn btn-danger text-muted">CREA TU PERFIL</button></a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		      	<li class="hidden-lg hideen-md hidden-sm"><a href="#"><h5>Home</h5></a></li>
+		        <li><a href="nosotros.html"><h5>Sobre nosotros</h5><span class="sr-only">(current)</span></a></li>
 		        <li class="hidden-lg hideen-md hidden-sm"><a href="#"><h5>Ingresa a tu cuenta</h5></a></li>
 		        <li class="hidden-lg hideen-md hidden-sm"><a href="#"><h5>Home</h5></a></li>
 		        <li><a href="#"><h5>Crear cuenta</h5></a></li>
@@ -89,7 +122,7 @@
 	    				<div class="circulo">
 	    					<div class="circulo-interno hidden-xs hidden-sm">
 	    						<div class="circulo-texto text-white">
-	    							Otenemos el perfil profesional del postulante mediante un análisis completo que identifica el mejor alento para cualquier puesto <br><br>Nos basamos en 3 pilares.
+	    							<p>Otenemos el perfil profesional del postulante mediante un análisis completo que identifica el mejor alento para cualquier puesto <br><br>Nos basamos en 3 pilares.</p>
 	    						</div>
 	    					</div>
 	    					<hr class="vertical">
@@ -98,6 +131,16 @@
 		    					<h5 class="text-lightgray">Actualización continua del perfil óptimo para cada puesto, que permita incorporar cambios a la economía laboral u operaciones internas que impacten el día a día</h5>
 	    					</div>
 	    				</div>
+	    				<div class=" circulo overlay">
+	    					<div class="circulo-interno hidden-xs hidden-sm">
+	    						<div class="circulo-texto text-white">
+	    							<p>El corazón de nuestra metodología es nuestro propio examen</p>
+	    							<img src="assets/iconos/iconos-19.png">
+	    						</div>
+	    					</div>
+	    				</div>
+
+
 	    			</div>
 	    			<div class="col-md-3">
 	    				<hr class="izquierda">
@@ -196,7 +239,7 @@
 	    				<div class="pasos-internos">
 	    					<img src="assets/iconos/iconos-03.png">
 	    					<h3 class="text-gray">Evaluar postulantes</h3>
-	    					<span class="text-lightgray">El examen Farolito identifica a las personas que no solamente harán bien el trabajo, sino que permanecerán más tiempo en él</span>
+	    					<h5 class="text-lightgray">El examen Farolito identifica a las personas que no solamente harán bien el trabajo, sino que permanecerán más tiempo en él</h5>
 	    					<a href=""><h4 class="text-primary">Ver más informacion</h4></a>
 	    				</div>
 	    			</div>
@@ -204,14 +247,14 @@
 	    				<div class="pasos-internos">
 	    					<img src="assets/iconos/iconos-04.png">
 	    					<h3 class="text-gray">Diagnóstico de la rotación</h3>
-	    					<span class="text-lightgray">Revisión de datos manejados por su empresa para identificar a los contrinuidores escondidos de la rotación</span>
+	    					<h5 class="text-lightgray">Revisión de datos manejados por su empresa para identificar a los contrinuidores escondidos de la rotación</h5>
 	    				</div>
 	    			</div>
 	    			<div class="col-md-4">
 	    				<div class="pasos-internos">
 	    					<img src="assets/iconos/iconos-05.png">
 	    					<h3 class="text-gray">Coaching laboral</h3>
-	    					<span class="text-lightgray">Asesoría dirigida a nuevos trabajadores durante el proceso de inserción</span>
+	    					<h5 class="text-lightgray">Asesoría dirigida a nuevos trabajadores durante el proceso de inserción</h5>
 	    				</div>
 	    			</div>
 	    		</div>
@@ -321,20 +364,20 @@
 	    		</div>
 	    		<div class="row m-0 blog-post">
 	    			<div class="col-md-4">
-	    				<img src="assets/iconos/iconos-22.png">
 	    				<div class=" blog text-gray">
+	    					<img src="assets/iconos/iconos-22.png">
 	    					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</h5>
 	    				</div>
 	    			</div>
 	    			<div class="col-md-4">
-	    				<img src="assets/iconos/iconos-23.png">
 	    				<div class=" blog text-gray">
+	    					<img src="assets/iconos/iconos-23.png">
 	    					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</h5>
 	    				</div>
 	    			</div>
 	    			<div class="col-md-4">
-	    				<img src="assets/iconos/iconos-23.png">
 	    				<div class=" blog text-gray">
+	    					<img src="assets/iconos/iconos-23.png">
 	    					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</h5>
 	    				</div>
 	    			</div>

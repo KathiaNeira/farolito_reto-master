@@ -3,17 +3,16 @@
 }
 
 #nosotros{
-	background: url(../assets/img/img_nosotros-02.png) no-repeat;
+	background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
 	background-size: cover;
 	height: 65%;
-		.portada-nosotros{
-				display: table;
-				width: 100%;
-				position: relative;
-			.nosotros{
-					display: table-cell;
-					vertical-align: middle;
-			} 
+	position: relative;
+	display: table;
+	width: 100%;
+		.nosotros{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
 		}
 }
 
