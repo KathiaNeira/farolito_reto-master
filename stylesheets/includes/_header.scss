@@ -1,7 +1,7 @@
 .navbar-default{
 	background-color: transparent;
 	border-color: transparent;
-	position: fixed;
+	position: absolute;
 	z-index:10;
   width: 100%;
   transition: height 0.2s ease-in-out;
@@ -46,6 +46,17 @@
 	border: 2px solid gray;
 }
 
-/*.navbar.on-scroll{
-	 background-color: rgb(240,251,253);
-}*/
+.navegacion-oculta{
+	background-color: rgb(240,251,253);
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  border-bottom: 1px solid #DDD
+}
+
+.menu-oculto.active {
+  opacity: 1;
+}
+

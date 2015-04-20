@@ -12,7 +12,7 @@
 
 #portada{
 	background: url(../assets/img/img-home.png) no-repeat center center scroll;
-	height: 90%;
+	height: 98%;
 	display: table;
 	background-size: cover;
 	.portada{
@@ -29,7 +29,8 @@
 
 @media only screen and (max-width: 780px) {
 	#portada {
-		  background: none
+		  background: none;
+		  background-color:rgb(240,251,253);
 		}
 	}
 
@@ -98,7 +99,7 @@
 				  width: 70%;
 		  }
 		  .evaluacion{
-		  		padding: 85px 20px 0;
+		  		padding: 85px 14px 0;
 		  }
 	.circulo{
 		  width: 72%;
@@ -111,7 +112,7 @@
   				width: 400px;
 			.circulo-texto{
 					  color: white;
-					  padding: 40px;
+					  padding: 55px 14px;
 					  background-color: tomato;
 					  border-radius: 50%;
 					  border: 2px dashed white;
@@ -121,8 +122,19 @@
 					  margin: 0 auto;
 					  bottom: -16px;
 					  font-size: 21px;
+					  p{
+					  	line-height: 30px !important;
+					  }
 			}
 		}
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 94px;
+	}
+	.btn-ver-todos{
+		 padding: 14px 70px;
 	}
 }
 
@@ -320,23 +332,23 @@
 	}
 
 #blog{
-		padding: 50px 0;
+		padding: 35px 0;
 		h5{
 			text-align: left;
 		}
 		img{
 					position: relative;
-					top: 30px;
+					bottom: 30px;
 					border-radius: 50%;
 					}
 			.blog-post{
-						padding: 20px 150px;
+						padding: 60px 150px;
 				}
 }
 
 .blog{
 		background-color: whitesmoke;
-		padding: 30px;
+		padding: 0 25px 38px;
 			}
 
 .blog:hover {
@@ -349,7 +361,12 @@
 				padding: 0;
 				.blog {
 				  background-color: transparent;
-				  padding: 50px 0 0;
+				  margin-bottom: 38px;
+  				padding: 25px;
+  				img{
+  						position: initial;
+  						bottom: 0;
+  				}
 				}
 			}
 		}
@@ -380,4 +397,28 @@
 		float: none;
 		border-bottom: 1px dashed red;
 	}
+}
+
+.modal-title{
+		font-weight: 900;
+		letter-spacing: 1.9px;
+}
+
+.modal-dialog{
+	width: 500px;
+	margin: 10% auto;
+	z-index: 2000;
+}
+
+.modal-content{
+	border-radius: 8%;
+	border: 5px solid rgb(208, 202, 202);
+}
+
+.modal-body{
+	padding: 45px 15px;
+}
+
+.modal-footer{
+	border-top: none;
 }
