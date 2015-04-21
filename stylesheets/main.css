@@ -5985,6 +5985,9 @@ button.close {
 .text-lightgray {
   color: #c2c0c0; }
 
+.bold {
+  font-weight: bold; }
+
 h2 {
   font-weight: bold;
   font-size: 30px; }
@@ -6018,7 +6021,8 @@ p {
 
 .deslizador {
   position: relative;
-  bottom: -90px; }
+  bottom: -90px;
+  text-align: center; }
   .deslizador img {
     border-radius: 50%; }
 
@@ -6068,7 +6072,8 @@ p {
 
 .deslizador {
   position: relative;
-  bottom: -90px; }
+  bottom: -90px;
+  text-align: center; }
   .deslizador img {
     border-radius: 50%; }
 
@@ -6549,6 +6554,9 @@ p {
 .text-lightgray {
   color: #c2c0c0; }
 
+.bold {
+  font-weight: bold; }
+
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -6613,6 +6621,13 @@ footer {
         border-radius: 50%;
         border: 1px solid white; }
 
+@media only screen and (max-width: 780px) {
+  footer .redes {
+    margin: 0 auto; }
+  footer h6 {
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: 30px; } }
 /*@media screen (max-width: 600px){
   .navbar-default {
   	ul{
@@ -6922,7 +6937,8 @@ footer {
   border-top: none; }
 
 .nav-nosotros {
-  background-color: #f0fbfd; }
+  background-color: #f0fbfd;
+  position: fixed; }
 
 #nosotros {
   background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
@@ -6936,19 +6952,35 @@ footer {
     vertical-align: middle;
     text-align: center; }
 
+.botton {
+  margin-bottom: 50px; }
+
 #fundadores {
-  padding: 50px 0; }
+  padding: 50px 0 20px; }
   #fundadores .row {
-    padding: 50px 70px 0; }
+    padding: 0 70px 0; }
+    #fundadores .row .text-center {
+      padding: 0 20px; }
+      #fundadores .row .text-center .redondo {
+        width: 50%; }
   #fundadores hr {
     margin-top: 70px;
     width: 80%;
     border: 1px dashed gray; }
 
+@media only screen and (max-width: 780px) {
+  #fundadores {
+    padding: 14px 0; }
+    #fundadores .row {
+      padding: 0; }
+      #fundadores .row .redondo {
+        width: 30%; } }
 #asesores hr {
   margin-top: 70px;
   width: 80%;
   border: 1px dashed gray; }
+#asesores .text-center {
+  padding: 0 20px; }
 
 .redondo {
   width: 50%;
@@ -6965,10 +6997,19 @@ footer {
   #genios hr {
     border: 1px dashed white;
     width: 60%; }
+  #genios p {
+    line-height: 35px; }
 
 #test {
-  padding: 50px 0; }
+  padding: 20px 0 70px; }
+  #test .text-center {
+    padding: 0 20px; }
+  #test .row {
+    padding: 0 70px 0; }
 
+@media only screen and (max-width: 780px) {
+  #genios {
+    padding: 70px 25px; } }
 #blog-interno {
   padding: 100px 0; }
   #blog-interno .img-blog {
