@@ -6705,33 +6705,64 @@ footer {
     width: 70%; }
   #metodologia .evaluacion {
     padding: 85px 14px 0; }
-  #metodologia .circulo {
+  #metodologia .circulo,
+  #metodologia .overlay {
     width: 72%;
     margin: 0 auto; }
-    #metodologia .circulo .circulo-interno {
-      background-color: tomato;
+    #metodologia .circulo .circulo-interno,
+    #metodologia .circulo .circulo-overlay,
+    #metodologia .overlay .circulo-interno,
+    #metodologia .overlay .circulo-overlay {
       padding: 10px;
       border-radius: 50%;
       height: 400px;
       width: 400px; }
-      #metodologia .circulo .circulo-interno .circulo-texto {
-        color: white;
+      #metodologia .circulo .circulo-interno .circulo-texto,
+      #metodologia .circulo .circulo-interno .interno-overlay,
+      #metodologia .circulo .circulo-overlay .circulo-texto,
+      #metodologia .circulo .circulo-overlay .interno-overlay,
+      #metodologia .overlay .circulo-interno .circulo-texto,
+      #metodologia .overlay .circulo-interno .interno-overlay,
+      #metodologia .overlay .circulo-overlay .circulo-texto,
+      #metodologia .overlay .circulo-overlay .interno-overlay {
         padding: 55px 14px;
-        background-color: tomato;
         border-radius: 50%;
-        border: 2px dashed white;
         height: 350px;
         width: 350px;
         position: relative;
         margin: 0 auto;
         bottom: -16px;
         font-size: 21px; }
-        #metodologia .circulo .circulo-interno .circulo-texto p {
+        #metodologia .circulo .circulo-interno .circulo-texto p,
+        #metodologia .circulo .circulo-interno .interno-overlay p,
+        #metodologia .circulo .circulo-overlay .circulo-texto p,
+        #metodologia .circulo .circulo-overlay .interno-overlay p,
+        #metodologia .overlay .circulo-interno .circulo-texto p,
+        #metodologia .overlay .circulo-interno .interno-overlay p,
+        #metodologia .overlay .circulo-overlay .circulo-texto p,
+        #metodologia .overlay .circulo-overlay .interno-overlay p {
           line-height: 30px !important; }
+  #metodologia .circulo .circulo-interno {
+    background-color: tomato; }
+    #metodologia .circulo .circulo-interno .circulo-texto {
+      color: white;
+      background-color: tomato;
+      border: 2px dashed white; }
   #metodologia .overlay {
     position: absolute;
     top: 0;
     left: 94px; }
+    #metodologia .overlay .circulo-overlay {
+      border: 2px dashed tomato;
+      z-index: 10; }
+      #metodologia .overlay .circulo-overlay .interno-overlay {
+        background-color: white;
+        color: gray; }
+        #metodologia .overlay .circulo-overlay .interno-overlay img {
+          position: relative;
+          top: 26px;
+          right: 35px;
+          width: 55%; }
   #metodologia .btn-ver-todos {
     padding: 14px 70px; }
 
@@ -6862,10 +6893,12 @@ footer {
       float: right; }
     #lista .oportunidades p {
       text-decoration: underline; }
-  #lista .btn-todos {
-    border-radius: 17px;
-    background-color: gray;
-    margin: 30px 0; }
+  #lista .boton-lista {
+    text-align: center; }
+    #lista .boton-lista .btn-todos {
+      border-radius: 17px;
+      background-color: gray;
+      margin: 50px 0 0; }
 
 @media only screen and (max-width: 800px) {
   #lista {
@@ -6902,6 +6935,11 @@ footer {
 #consulta {
   background-color: #e7e6e6;
   padding: 50px 0; }
+  #consulta button {
+    float: right;
+    margin-top: 20px; }
+  #consulta .numero-telefonico {
+    margin-top: 70px; }
 
 @media only screen and (max-width: 480px) {
   footer .redes {
@@ -6949,8 +6987,8 @@ footer {
   width: 100%; }
   #nosotros .nosotros {
     display: table-cell;
-    vertical-align: middle;
-    text-align: center; }
+    text-align: center;
+    padding-top: 7%; }
 
 .botton {
   margin-bottom: 50px; }
@@ -6993,7 +7031,8 @@ footer {
     border-radius: 50%; }
 
 #genios {
-  padding: 70px 0; }
+  padding: 70px 0;
+  background-color: #ff6a49; }
   #genios hr {
     border: 1px dashed white;
     width: 60%; }
@@ -7037,6 +7076,9 @@ footer {
     bottom: 20px;
     border-radius: 50%; }
 
+@media only screen and (max-width: 780px) {
+  #blog-interno {
+    padding: 60px 0; } }
 .blog:hover .text-primary {
   color: tomato; }
 

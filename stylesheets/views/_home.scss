@@ -65,66 +65,75 @@
 	.vertical,
 	.derecha,
 	.izquierda{
-  				border: 2px dashed tomato;
-  				width: 25%;
-		  }
-		  .evaluacion-derecha{
-		  		position: relative;
-				  top: 127px;
-				  left: 90px;
-		  }
-		  .evaluacion-izquierda{
-		  		position: relative;
-				  top: 127px;
-				  right: 90px;
-		  }
-		  .evaluacion-central{
-		  		padding: 20px 50px 0 !important;
-		  }
-		  .vertical{
-		  		transform: rotate(90deg);
-		  }
-		  .derecha{
-		  		transform: rotate(160deg);
-		  		position: relative;
-				  left: 208px;
-				  top: 160px;
-				  width: 70%;
-		  }
-		  .izquierda{
-		  		transform: rotate(20deg);
-		  		position: relative;
-				  right: 208px;
-				  top: 157px;
-				  width: 70%;
-		  }
-		  .evaluacion{
-		  		padding: 85px 14px 0;
-		  }
-	.circulo{
+  		border: 2px dashed tomato;
+  		width: 25%;
+	 }
+	.evaluacion-derecha{
+			position: relative;
+	    top: 127px;
+		  left: 90px;
+	}
+	.evaluacion-izquierda{
+	 		position: relative;
+		  top: 127px;
+		  right: 90px;
+	}
+	.evaluacion-central{
+	 		padding: 20px 50px 0 !important;
+	}
+	.vertical{
+	 		transform: rotate(90deg);
+	}
+	.derecha{
+			transform: rotate(160deg);
+	 		position: relative;
+		  left: 208px;
+		  top: 160px;
+		  width: 70%;
+	}
+	.izquierda{
+			transform: rotate(20deg);
+	 		position: relative;
+		  right: 208px;
+		  top: 157px;
+		  width: 70%;
+	}
+	.evaluacion{
+	 		padding: 85px 14px 0;
+	}
+	.circulo,
+	.overlay{
 		  width: 72%;
 		  margin: 0 auto;
+		.circulo-interno,
+		.circulo-overlay {
+		  padding: 10px;
+		  border-radius: 50%;
+		  height: 400px;
+  		width: 400px;
+		.circulo-texto,
+		.interno-overlay {
+		  padding: 55px 14px;
+		  border-radius: 50%;
+		  height: 350px;
+		  width: 350px;
+		  position: relative;
+		  margin: 0 auto;
+		  bottom: -16px;
+		  font-size: 21px;
+	  p{
+	  	line-height: 30px !important;
+		}
+	}
+	}
+	}
+	.circulo{
 		.circulo-interno{
-				  background-color: tomato;
-				  padding: 10px;
-				  border-radius: 50%;
-				  height: 400px;
-  				width: 400px;
+			background-color: tomato;
 			.circulo-texto{
-					  color: white;
-					  padding: 55px 14px;
-					  background-color: tomato;
-					  border-radius: 50%;
-					  border: 2px dashed white;
-					  height: 350px;
-					  width: 350px;
-					  position: relative;
-					  margin: 0 auto;
-					  bottom: -16px;
-					  font-size: 21px;
-					  p{
-					  	line-height: 30px !important;
-					  }
+				color: white;
+				background-color: tomato;
+		    border: 2px dashed white;
 			}
 		}
 	}
@@ -132,6 +141,20 @@
 		position: absolute;
 		top: 0;
 		left: 94px;
+		.circulo-overlay{
+				border: 2px dashed tomato;
+				z-index: 10;
+				.interno-overlay{
+						background-color: white;
+						color: gray;
+						img{
+							  position: relative;
+  							top: 26px;
+ 								right: 35px;
+ 								width: 55%;
+						}
+				}
+		}
 	}
 	.btn-ver-todos{
 		 padding: 14px 70px;
@@ -318,11 +341,14 @@
 				text-decoration: underline;
 		}
 	}
+	.boton-lista{
+		  text-align: center;
 	.btn-todos{
 				border-radius: 17px;
 				background-color: gray;
-				margin: 30px 0;
+				margin: 50px 0 0;
 		}
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -375,6 +401,13 @@
 #consulta{
 	background-color: rgb(231, 230, 230);
 	padding: 50px 0;
+		button{
+			 float: right;
+ 			 margin-top: 20px;
+		}
+		.numero-telefonico{
+			margin-top: 70px;
+		}
 }
 
 @media only screen and (max-width: 480px) {
