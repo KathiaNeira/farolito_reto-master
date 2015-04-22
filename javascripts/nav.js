@@ -18,7 +18,7 @@
 
 $(document).ready(function()
 {
-    $(".circulo").hover
+    $(".circulo-interno").hover
     (
         function()
         {

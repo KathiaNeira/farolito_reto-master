@@ -87,14 +87,14 @@
 	.derecha{
 			transform: rotate(160deg);
 	 		position: relative;
-		  left: 208px;
-		  top: 160px;
+		  left: 180px;
+		  top: 157px;
 		  width: 70%;
 	}
 	.izquierda{
 			transform: rotate(20deg);
 	 		position: relative;
-		  right: 208px;
+		  right: 180px;
 		  top: 157px;
 		  width: 70%;
 	}
@@ -107,7 +107,6 @@
 		  margin: 0 auto;
 		.circulo-interno,
 		.circulo-overlay {
-		  padding: 10px;
 		  border-radius: 50%;
 		  height: 400px;
   		width: 400px;
@@ -134,6 +133,9 @@
 				color: white;
 				background-color: tomato;
 		    border: 2px dashed white;
+		    width: 380px;
+  			height: 370px;
+  			padding: 45px;
 			}
 		}
 	}
@@ -142,14 +144,14 @@
 		top: 0;
 		left: 94px;
 		.circulo-overlay{
-				border: 2px dashed tomato;
 				z-index: 10;
 				.interno-overlay{
+						border: 2px dashed tomato;
 						background-color: white;
 						color: gray;
 						img{
 							  position: relative;
-  							top: 26px;
+  							top: 4px;
  								right: 35px;
  								width: 55%;
 						}

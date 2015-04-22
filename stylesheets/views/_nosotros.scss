@@ -3,6 +3,17 @@
 	  position: fixed;
 }
 
+@media only screen and (max-width: 680px){
+	.nav-nosotros{
+		height: auto;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form{
+			background-color: mediumturquoise;
+			height: 100%;
+		}
+	}
+
 #nosotros{
 	background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
 	background-size: cover;

@@ -60,3 +60,44 @@
   opacity: 1;
 }
 
+@media only screen and (max-width: 680px){
+	.navbar-default{
+		height: 100%;
+		position: fixed;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form{
+			background-color: mediumturquoise;
+			height: 100%;
+			ul{
+				  margin: 0 -15px;
+				li{
+					display: block;
+					text-align: center;
+					border-bottom: 2px dashed white;
+					padding: 10px;
+					a,
+					a:hover, 
+					.navbar-default, 
+					a:focus{ 
+							color: white;
+						h5{
+							  font-size: 30px;
+							  font-weight: 900;
+							  margin-bottom: 20px;
+						}
+					}
+				}
+				.home{
+					  padding-top: 40px;
+				}
+				.contacto{
+					border-bottom: 0;
+				}
+			}
+			li:hover{
+				  background-color: tomato;
+			}
+		}
+	}
+

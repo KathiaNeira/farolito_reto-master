@@ -6607,6 +6607,53 @@ p {
 .menu-oculto.active {
   opacity: 1; }
 
+@media only screen and (max-width: 680px) {
+  .navbar-default {
+    height: 100%;
+    position: fixed; }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    background-color: mediumturquoise;
+    height: 100%; }
+    .navbar-default .navbar-collapse ul,
+    .navbar-default .navbar-form ul {
+      margin: 0 -15px; }
+      .navbar-default .navbar-collapse ul li,
+      .navbar-default .navbar-form ul li {
+        display: block;
+        text-align: center;
+        border-bottom: 2px dashed white;
+        padding: 10px; }
+        .navbar-default .navbar-collapse ul li a,
+        .navbar-default .navbar-collapse ul li a:hover,
+        .navbar-default .navbar-collapse ul li .navbar-default,
+        .navbar-default .navbar-collapse ul li a:focus,
+        .navbar-default .navbar-form ul li a,
+        .navbar-default .navbar-form ul li a:hover,
+        .navbar-default .navbar-form ul li .navbar-default,
+        .navbar-default .navbar-form ul li a:focus {
+          color: white; }
+          .navbar-default .navbar-collapse ul li a h5,
+          .navbar-default .navbar-collapse ul li a:hover h5,
+          .navbar-default .navbar-collapse ul li .navbar-default h5,
+          .navbar-default .navbar-collapse ul li a:focus h5,
+          .navbar-default .navbar-form ul li a h5,
+          .navbar-default .navbar-form ul li a:hover h5,
+          .navbar-default .navbar-form ul li .navbar-default h5,
+          .navbar-default .navbar-form ul li a:focus h5 {
+            font-size: 30px;
+            font-weight: 900;
+            margin-bottom: 20px; }
+      .navbar-default .navbar-collapse ul .home,
+      .navbar-default .navbar-form ul .home {
+        padding-top: 40px; }
+      .navbar-default .navbar-collapse ul .contacto,
+      .navbar-default .navbar-form ul .contacto {
+        border-bottom: 0; }
+    .navbar-default .navbar-collapse li:hover,
+    .navbar-default .navbar-form li:hover {
+      background-color: tomato; } }
 footer {
   background-color: gray; }
   footer .redes {
@@ -6694,13 +6741,13 @@ footer {
   #metodologia .derecha {
     transform: rotate(160deg);
     position: relative;
-    left: 208px;
-    top: 160px;
+    left: 180px;
+    top: 157px;
     width: 70%; }
   #metodologia .izquierda {
     transform: rotate(20deg);
     position: relative;
-    right: 208px;
+    right: 180px;
     top: 157px;
     width: 70%; }
   #metodologia .evaluacion {
@@ -6713,7 +6760,6 @@ footer {
     #metodologia .circulo .circulo-overlay,
     #metodologia .overlay .circulo-interno,
     #metodologia .overlay .circulo-overlay {
-      padding: 10px;
       border-radius: 50%;
       height: 400px;
       width: 400px; }
@@ -6747,20 +6793,23 @@ footer {
     #metodologia .circulo .circulo-interno .circulo-texto {
       color: white;
       background-color: tomato;
-      border: 2px dashed white; }
+      border: 2px dashed white;
+      width: 380px;
+      height: 370px;
+      padding: 45px; }
   #metodologia .overlay {
     position: absolute;
     top: 0;
     left: 94px; }
     #metodologia .overlay .circulo-overlay {
-      border: 2px dashed tomato;
       z-index: 10; }
       #metodologia .overlay .circulo-overlay .interno-overlay {
+        border: 2px dashed tomato;
         background-color: white;
         color: gray; }
         #metodologia .overlay .circulo-overlay .interno-overlay img {
           position: relative;
-          top: 26px;
+          top: 4px;
           right: 35px;
           width: 55%; }
   #metodologia .btn-ver-todos {
@@ -6978,6 +7027,14 @@ footer {
   background-color: #f0fbfd;
   position: fixed; }
 
+@media only screen and (max-width: 680px) {
+  .nav-nosotros {
+    height: auto; }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    background-color: mediumturquoise;
+    height: 100%; } }
 #nosotros {
   background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
   background-size: cover;
