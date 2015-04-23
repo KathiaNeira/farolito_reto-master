@@ -199,6 +199,13 @@
 			  font-size: 21px !important;
 			  text-align: left;
 		}
+		.separador{
+			h4{
+				  border-bottom: 2px dashed white;
+				  margin-left: 65px;
+				  padding-bottom: 10px;
+			}
+		}
 		.titulo-postulante{
 			  padding-top: 50px;
 		}
@@ -219,9 +226,6 @@
 				  width: 25%;
 				  left: 58px;
 				  z-index: 10;
-				}
-				.subrayado{
-						border: 1px dashed white;
 				}
 		.postulante-texto{
 				padding-left: 50px;
@@ -249,6 +253,8 @@
 			}
 			h4{
 				text-align: center;
+				margin: 20px 30px;
+				margin-left: 0 !important;
 			}
 			.subrayado{
 				width: 75%;
@@ -456,4 +462,8 @@
 
 .modal-footer{
 	border-top: none;
+}
+
+.modal-backdrop{
+	background-color: rgb(203, 203, 203);
 }

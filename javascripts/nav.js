@@ -8,25 +8,28 @@
 //     }
 //   });
 
-// $(".circulo").click(function(){
-// 	$().toggle();
+// $(window).scroll(function(){
+//   var menu= $(this).scrollTop();
+//   if (menu > 650) {
+//     $(".navbar").addClass("scroll")
+//   }
+//   else if (menu < 650) {
+//     $(".navbar").removeClass("scroll");
+//   }
 // });
 
-// $().hover(function(){
-// 	$().toggleClass();
-// });
 
-$(document).ready(function()
-{
-    $(".circulo-interno").hover
-    (
-        function()
-        {
-            $(this).stop().animate({ opacity: 0.1 }, 1000);
-        },
-        function()
-        {
-            $(this).stop().animate({ opacity: 1 }, 1000);
-        }
-    );
-});
+// $(document).ready(function()
+// {
+//     $(".circulo-interno").hover
+//     (
+//         function()
+//         {
+//             $(this).stop().animate({ opacity: 0 }, 1000);
+//         },
+//         function()
+//         {
+//             $(this).stop().animate({ opacity: 1 }, 1000);
+//         }
+//     );
+// });

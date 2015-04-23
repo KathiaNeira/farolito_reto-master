@@ -6595,22 +6595,40 @@ p {
   padding: 2px 4px;
   border: 2px solid gray; }
 
-.navegacion-oculta {
-  background-color: #f0fbfd;
+/*.navegacion-oculta{
+	background-color: rgb(240,251,253);
   position: fixed;
   height: 70px;
   width: 100%;
   opacity: 0;
   z-index: 1;
-  border-bottom: 1px solid #DDD; }
+  border-bottom: 1px solid #DDD
+}
 
 .menu-oculto.active {
-  opacity: 1; }
+  opacity: 1;
+}
+*/
+.navbar {
+  background-color: transparent;
+  transition: 0.8s ease-in-out; }
 
+.navbar.scroll {
+  background-color: #f0fbfd;
+  position: fixed;
+  width: 100%;
+  z-index: 11; }
+
+@media only screen and (max-width: 680px) {
+  .navbar.scroll {
+    background-color: transparent; } }
 @media only screen and (max-width: 680px) {
   .navbar-default {
     height: 100%;
     position: fixed; }
+
+  .navbar-header {
+    background-color: #f0fbfd; }
 
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
@@ -6840,6 +6858,10 @@ footer {
   #postulantes h6 {
     font-size: 21px !important;
     text-align: left; }
+  #postulantes .separador h4 {
+    border-bottom: 2px dashed white;
+    margin-left: 65px;
+    padding-bottom: 10px; }
   #postulantes .titulo-postulante {
     padding-top: 50px; }
   #postulantes .division {
@@ -6856,8 +6878,6 @@ footer {
     width: 25%;
     left: 58px;
     z-index: 10; }
-  #postulantes .subrayado {
-    border: 1px dashed white; }
   #postulantes .postulante-texto {
     padding-left: 50px;
     padding-top: 14px;
@@ -6877,7 +6897,9 @@ footer {
     float: none;
     position: initial; }
   #postulantes h4 {
-    text-align: center; }
+    text-align: center;
+    margin: 20px 30px;
+    margin-left: 0 !important; }
   #postulantes .subrayado {
     width: 75%; }
   #postulantes .postulante-texto {
@@ -7023,6 +7045,9 @@ footer {
 .modal-footer {
   border-top: none; }
 
+.modal-backdrop {
+  background-color: #cbcbcb; }
+
 .nav-nosotros {
   background-color: #f0fbfd;
   position: fixed; }
@@ -7047,6 +7072,9 @@ footer {
     text-align: center;
     padding-top: 7%; }
 
+@media only screen and (max-width: 680px) {
+  #nosotros {
+    background: url(../assets/img/Farolito-fondo-quienes-somos.png) no-repeat center center scroll; } }
 .botton {
   margin-bottom: 50px; }
 
