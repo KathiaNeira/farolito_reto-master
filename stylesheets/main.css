@@ -7074,7 +7074,10 @@ footer {
 
 @media only screen and (max-width: 680px) {
   #nosotros {
-    background: url(../assets/img/Farolito-fondo-quienes-somos.png) no-repeat center center scroll; } }
+    background: url(../assets/img/Farolito-fondo-quienes-somos.png) no-repeat center center scroll;
+    background-size: cover; }
+    #nosotros .nosotros {
+      padding-top: 20%; } }
 .botton {
   margin-bottom: 50px; }
 
