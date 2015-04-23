@@ -6039,6 +6039,13 @@ span,
 p {
   font-family: 'Lato', sans-serif; }
 
+.btn-facebook {
+  background-color: #5151f7;
+  color: white; }
+
+.btn:hover, .btn:focus, .btn.focus {
+  color: white; }
+
 h2 {
   font-weight: bold;
   font-size: 30px; }
@@ -6089,6 +6096,13 @@ h6,
 span,
 p {
   font-family: 'Lato', sans-serif; }
+
+.btn-facebook {
+  background-color: #5151f7;
+  color: white; }
+
+.btn:hover, .btn:focus, .btn.focus {
+  color: white; }
 
 .p-0 {
   padding: rem(0) !important;
@@ -6613,11 +6627,8 @@ p {
   background-color: transparent;
   transition: 0.8s ease-in-out; }
 
-.navbar.scroll {
-  background-color: #f0fbfd;
-  position: fixed;
-  width: 100%;
-  z-index: 11; }
+.navbar-brand > img {
+  width: 35%; }
 
 @media only screen and (max-width: 680px) {
   .navbar.scroll {
@@ -7167,6 +7178,24 @@ footer {
 @media only screen and (max-width: 780px) {
   #blog-interno {
     padding: 60px 0; } }
+.contenido {
+  border: 5px solid #95d9db;
+  border-radius: 0; }
+
+.modal-facebook {
+  padding: 10px 15px; }
+  .modal-facebook .compartir-facebook {
+    padding-top: 40px; }
+    .modal-facebook .compartir-facebook .compartir img {
+      width: 100%;
+      padding-top: 20px; }
+  .modal-facebook select {
+    border-radius: 5px;
+    background-color: #efefef; }
+
+.modal-footer select {
+  padding: 3px; }
+
 .blog:hover .text-primary {
   color: tomato; }
 

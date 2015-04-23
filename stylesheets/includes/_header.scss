@@ -65,12 +65,12 @@
 	transition: 0.8s ease-in-out;
 }
 
-.navbar.scroll{
-	background-color: #f0fbfd;
-	position: fixed;
-	width: 100%;
-	z-index: 11;
+
+.navbar-brand > img{
+	width: 35%;
 }
+
+ 
 
 @media only screen and (max-width: 680px){
 	.navbar.scroll{

@@ -47,5 +47,32 @@
 }
 
 
+.contenido{
+	  border: 5px solid rgb(149, 217, 219);
+	  border-radius: 0;
+}
+.modal-facebook{
+		padding: 10px 15px;
+	.compartir-facebook{
+		  padding-top: 40px;
+		.compartir{
+			img{
+				width:100%;
+				padding-top: 20px;
+			}
+		}
+	}
+	select{
+		  border-radius: 5px;
+  		background-color: rgb(239, 239, 239);
+	}
+}
+.modal-footer{
+	select{
+	  padding: 3px;
+		}
+	}
+
+
 
 
