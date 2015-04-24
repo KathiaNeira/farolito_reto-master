@@ -186,6 +186,9 @@
 				padding: 0;
 			}
 		}
+		.evaluacion-izquierda{
+			padding-top: 20px;
+		}
 	}
 
 #postulantes{
@@ -242,6 +245,9 @@
 
 @media only screen and (max-width: 480px) {
 		#postulantes{
+			.division{
+				border-left: 0;
+			}
 			.img-numero{
 				float: none;
 				width: 100%;
@@ -253,16 +259,27 @@
 			}
 			h4{
 				text-align: center;
-				margin: 20px 30px;
+				margin: 20px 4px;
 				margin-left: 0 !important;
 			}
 			.subrayado{
 				width: 75%;
 			}
+			.division{
+					padding: 10px 42px;
 			.postulante-texto{
 					padding-left: 0;
 					padding-top: 0;
 					padding-bottom: 30px;
+					h6{
+						text-align: center;
+					}
+				}
+			}
+			.separador{
+				h4{
+						font-size: 25px;
+				}
 			}
 		}
 	}
@@ -394,7 +411,6 @@
 		.blog-post{
 				padding: 0;
 				.blog {
-				  background-color: transparent;
 				  margin-bottom: 38px;
   				padding: 25px;
   				img{

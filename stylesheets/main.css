@@ -6865,7 +6865,10 @@ footer {
   #metodologia .seccion-circular .evaluacion-izquierda,
   #metodologia .seccion-circular .evaluacion-centro {
     position: initial;
-    padding: 0; } }
+    padding: 0; }
+
+  .evaluacion-izquierda {
+    padding-top: 20px; } }
 #postulantes {
   background: url(../assets/img/img-02.png) no-repeat;
   background-size: cover;
@@ -6906,6 +6909,8 @@ footer {
     padding: 10px 35px; }
 
 @media only screen and (max-width: 480px) {
+  #postulantes .division {
+    border-left: 0; }
   #postulantes .img-numero {
     float: none;
     width: 100%;
@@ -6915,14 +6920,20 @@ footer {
     position: initial; }
   #postulantes h4 {
     text-align: center;
-    margin: 20px 30px;
+    margin: 20px 4px;
     margin-left: 0 !important; }
   #postulantes .subrayado {
     width: 75%; }
-  #postulantes .postulante-texto {
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 30px; } }
+  #postulantes .division {
+    padding: 10px 42px; }
+    #postulantes .division .postulante-texto {
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 30px; }
+      #postulantes .division .postulante-texto h6 {
+        text-align: center; }
+  #postulantes .separador h4 {
+    font-size: 25px; } }
 #empresa {
   padding: 50px 0; }
   #empresa .btn-contactanos {
@@ -7014,7 +7025,6 @@ footer {
   #blog .blog-post {
     padding: 0; }
     #blog .blog-post .blog {
-      background-color: transparent;
       margin-bottom: 38px;
       padding: 25px; }
       #blog .blog-post .blog img {
